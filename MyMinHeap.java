@@ -1,4 +1,4 @@
-public class MyMinHeap implements MinHeapFace{
+public class MyMinHeap implements MinHeap_Interface{
 	
     //Declare variables
     private int[] Heap; 
