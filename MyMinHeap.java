@@ -1,11 +1,7 @@
-package Assignment4;
-//Name: Ryan Ling
-//ID:1350127
-
 public class MyMinHeap implements MinHeapFace{
 	
-	//Declare variables
-	private int[] Heap; 
+    //Declare variables
+    private int[] Heap; 
     private int size = 0; 
     private int maxsize = 20; 
   
@@ -14,7 +10,6 @@ public class MyMinHeap implements MinHeapFace{
     //Add method for the heap
 	@Override
 	public void add(int x) {
-		// TODO Auto-generated method stub
 		 
         if (size >= maxsize) { 
           maxsize += 4;
@@ -37,9 +32,7 @@ public class MyMinHeap implements MinHeapFace{
 		}
 		return 0;
 	}
-	
-
-	//Min Heap
+    //Min Heap
     public void minHeap() 
     { 
         for (int pos = (size / 2); pos >= 1; pos--) { 
@@ -60,7 +53,6 @@ public class MyMinHeap implements MinHeapFace{
 		        minHeapDown(FRONT); 
 		        return item; 
 		}
-       
     } 
 	
 	//Replace the first item in the heap
@@ -75,8 +67,6 @@ public class MyMinHeap implements MinHeapFace{
 
 	@Override
 	public void clear() {
-		// TODO Auto-generated method stub
-		
 	}
 
 	//If the Heap is null 
@@ -102,12 +92,7 @@ public class MyMinHeap implements MinHeapFace{
 		return count;
 	}
 
-//	public static void main(String[] args) {
-//		// TODO Auto-generated method stub
-//
-//	}
-	
-	// Function to return the position of 
+    // Function to return the position of 
     // the parent for the node currently 
     // at pos 
     private int parent(int pos) 
@@ -151,8 +136,8 @@ public class MyMinHeap implements MinHeapFace{
         //Let the second heap become tmp to swap around
         Heap[second] = tmp; 
     } 
-  
-	 // Function to heapify the node at position
+   
+    // Function to heapify the node at position
     private void minHeapDown(int postion) 
     { 
   
