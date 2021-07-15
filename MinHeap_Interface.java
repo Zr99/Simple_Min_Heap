@@ -1,6 +1,5 @@
 // Interface for a (min)heap
 // Maintains a heap of integers where the root is the smallest value in the heap
-// @author Tony C. Smith
 //
 public interface MinHeapFace{
     public void add(int x); // add int to MinHeap
